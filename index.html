@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- ── SEO: Primary ── -->
+<title>Smiché Pizzerie — Artigianale Pizza in Cesena</title>
+<meta name="description" content="Smiché Pizzerie in Cesena: artisanal pizza with 48-hour leavening, unrefined local flours, DOP-certified ingredients, homemade desserts, and a beautiful terrace. Gluten-free and lactose-free options available."/>
+<meta name="keywords" content="pizzeria Cesena, pizza artigianale Cesena, pizza gourmet Romagna, pizza lievitazione 48 ore, Smiché pizzeria, gluten free pizza Cesena"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://www.smiche.it/"/>
+
+<!-- ── SEO: Open Graph ── -->
+<meta property="og:type" content="restaurant"/>
+<meta property="og:title" content="Smiché Pizzerie — Artigianale Pizza in Cesena"/>
+<meta property="og:description" content="Pizza crafted with 48-hour leavening, unrefined local flours, and DOP-certified ingredients. Dine in our warm rooms or on the terrace."/>
+<meta property="og:url" content="https://www.smiche.it/"/>
+<meta property="og:locale" content="it_IT"/>
+<meta property="og:locale:alternate" content="en_GB"/>
+
+<!-- ── SEO: Twitter Card ── -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Smiché Pizzerie — Artigianale Pizza in Cesena"/>
+<meta name="twitter:description" content="Pizza crafted with 48-hour leavening, unrefined local flours, and DOP-certified ingredients."/>
+
+<!-- ── SEO: Structured Data (Local Business + Menu) ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Smiché Pizzerie",
+  "image": "https://www.smiche.it/images/hero.jpg",
+  "url": "https://www.smiche.it",
+  "telephone": "+390547000000",
+  "email": "info@smiche.it",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Example, 1",
+    "addressLocality": "Cesena",
+    "addressRegion": "FC",
+    "postalCode": "47521",
+    "addressCountry": "IT"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 44.1396, "longitude": 12.2464 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "12:00", "closes": "14:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "18:30", "closes": "23:00" }
+  ],
+  "servesCuisine": "Italian",
+  "priceRange": "€€",
+  "hasMenu": "https://www.smiche.it/#menu",
+  "description": "Artisanal pizzeria in Cesena with 48-hour leavened pizza, unrefined local flours, DOP-certified ingredients, homemade desserts, and a terrace.",
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Outdoor Terrace", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Gluten-free options", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Lactose-free options", "value": true}
+  ]
+}
+</script>
+
+<!-- ── Fonts ── -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --forest:     #254645;
+    --terracotta: #AE7046;
+    --cream:      #EAE2CE;
+    --cream-dark: #d9cfb8;
+    --white:      #FDFAF5;
+    --text:       #1a1a1a;
+    --text-mid:   #4a4a4a;
+    --text-light: #7a7060;
+    --font-title: 'Cormorant Garamond', Georgia, serif;
+    --font-body:  'Montserrat', sans-serif;
+    --gap:        120px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); background: var(--white); color: var(--text); overflow-x: hidden; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 48px;
+    background: rgba(253,250,245,0.93); backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(37,70,69,0.1); transition: box-shadow 0.3s;
+  }
+  nav.scrolled { box-shadow: 0 2px 24px rgba(37,70,69,0.1); }
+  .nav-logo { display: flex; align-items: center; text-decoration: none; }
+  .nav-logo svg { height: 40px; width: auto; fill: var(--forest); }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; color: var(--forest); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--terracotta); }
+
+  /* HERO */
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 66px; }
+  .hero-text { display: flex; flex-direction: column; justify-content: center; padding: 80px 64px 80px 80px; position: relative; z-index: 2; }
+  .hero-eyebrow { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 24px; }
+  .hero-title { font-family: var(--font-title); font-size: clamp(3.5rem, 5.5vw, 5.8rem); font-weight: 400; line-height: 1.0; color: var(--forest); margin-bottom: 32px; }
+  .hero-title em { font-style: italic; color: var(--terracotta); }
+  .hero-desc { font-size: 0.9rem; font-weight: 300; line-height: 1.9; color: var(--text-mid); max-width: 420px; margin-bottom: 48px; }
+  .btn-primary { display: inline-block; background: var(--forest); color: var(--cream); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; padding: 16px 36px; align-self: flex-start; transition: background 0.25s; }
+  .btn-primary:hover { background: var(--terracotta); }
+  .hero-accent { position: absolute; bottom: 48px; left: 80px; display: flex; align-items: center; gap: 16px; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; color: var(--text-light); }
+  .hero-accent-line { width: 40px; height: 1px; background: var(--terracotta); }
+  .hero-image { position: relative; overflow: hidden; }
+  .hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .photo-placeholder { width: 100%; height: 100%; min-height: 480px; background: linear-gradient(160deg, var(--forest) 0%, #3a6b6a 50%, var(--terracotta) 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--cream); font-size: 0.72rem; letter-spacing: 0.1em; text-align: center; gap: 12px; opacity: 0.82; }
+
+  /* SHARED */
+  section { padding: var(--gap) 80px; }
+  .section-eyebrow { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 20px; }
+  .section-title { font-family: var(--font-title); font-size: clamp(2.4rem, 4vw, 3.6rem); font-weight: 400; line-height: 1.1; color: var(--forest); margin-bottom: 32px; }
+  .section-title em { font-style: italic; }
+
+  /* PHILOSOPHY */
+  #philosophy { background: var(--forest); display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; padding: var(--gap) 80px; }
+  #philosophy .section-eyebrow { color: var(--terracotta); }
+  #philosophy .section-title { color: var(--cream); }
+  .philosophy-text p { font-size: 0.92rem; font-weight: 300; line-height: 2.0; color: rgba(234,226,206,0.82); max-width: 520px; }
+  .philosophy-visual { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .ph-card { aspect-ratio: 1; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; text-align: center; }
+  .ph-card:nth-child(2) { margin-top: 32px; }
+  .ph-card:nth-child(4) { margin-top: -32px; }
+  .ph-card-num { font-family: var(--font-title); font-size: 2.8rem; font-weight: 300; color: var(--terracotta); line-height: 1; }
+  .ph-card-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(234,226,206,0.6); }
+
+  /* SPACES */
+  #spaces { background: var(--cream); }
+  .spaces-intro { max-width: 560px; margin-bottom: 64px; }
+  .spaces-intro p { font-size: 0.9rem; font-weight: 300; line-height: 1.9; color: var(--text-mid); }
+  .spaces-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+  .space-card { overflow: hidden; }
+  .space-card .img-wrap { aspect-ratio: 3/4; overflow: hidden; }
+  .space-card:nth-child(2) .img-wrap { aspect-ratio: 3/5; margin-top: 48px; }
+  .space-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
+  .space-card:hover img { transform: scale(1.04); }
+  .space-card .img-placeholder { width: 100%; height: 100%; min-height: 300px; background: linear-gradient(160deg, #3a6b6a, var(--forest)); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--cream); font-size: 0.7rem; letter-spacing: 0.1em; text-align: center; opacity: 0.7; }
+  .space-card-info { padding: 20px 4px 0; }
+  .space-card-info h3 { font-family: var(--font-title); font-size: 1.5rem; font-weight: 400; color: var(--forest); margin-bottom: 6px; }
+  .space-card-info p { font-size: 0.78rem; font-weight: 300; color: var(--text-light); line-height: 1.6; }
+
+  /* MENU */
+  #menu { background: var(--white); }
+  .menu-header { margin-bottom: 64px; }
+  .menu-title-main { font-family: var(--font-title); font-size: clamp(2rem,3.5vw,3rem); font-weight: 300; font-style: italic; color: var(--forest); text-align: center; margin-bottom: 56px; padding-bottom: 32px; border-bottom: 1px solid var(--cream-dark); }
+  .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; max-width: 920px; margin: 0 auto; }
+  .menu-item { padding: 32px 40px 32px 0; border-bottom: 1px solid var(--cream-dark); display: grid; grid-template-columns: 1fr auto; gap: 4px 32px; align-items: start; transition: background 0.2s; }
+  .menu-item:nth-child(even) { padding-left: 40px; padding-right: 0; border-left: 1px solid var(--cream-dark); }
+  .menu-item:hover { background: rgba(234,226,206,0.3); }
+  .menu-item-name { font-family: var(--font-title); font-size: 1.5rem; font-weight: 500; color: var(--forest); line-height: 1; grid-column: 1; }
+  .menu-item-price { font-family: var(--font-title); font-size: 1.4rem; font-weight: 300; color: var(--terracotta); grid-column: 2; grid-row: 1; white-space: nowrap; }
+  .menu-item-desc { font-size: 0.78rem; font-weight: 300; line-height: 1.75; color: var(--text-mid); grid-column: 1 / -1; margin-top: 6px; }
+  .menu-footer-note { text-align: center; margin-top: 40px; font-size: 0.7rem; font-weight: 400; font-style: italic; color: var(--text-light); letter-spacing: 0.04em; }
+
+  /* DESSERTS */
+  #desserts { background: var(--cream); padding: var(--gap) 80px; }
+  .desserts-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+  .desserts-intro p { font-size: 0.9rem; font-weight: 300; line-height: 1.9; color: var(--text-mid); max-width: 480px; margin-bottom: 48px; }
+  .dessert-item { display: flex; justify-content: space-between; align-items: baseline; padding: 22px 0; border-bottom: 1px solid var(--cream-dark); gap: 24px; }
+  .dessert-item:first-of-type { border-top: 1px solid var(--cream-dark); }
+  .dessert-info { flex: 1; }
+  .dessert-name { font-family: var(--font-title); font-size: 1.35rem; font-weight: 500; color: var(--forest); margin-bottom: 4px; }
+  .dessert-desc { font-size: 0.76rem; font-weight: 300; line-height: 1.7; color: var(--text-mid); }
+  .dessert-price { font-family: var(--font-title); font-size: 1.25rem; font-weight: 300; color: var(--terracotta); white-space: nowrap; }
+  .desserts-visual { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding-top: 72px; }
+  .dessert-photo { overflow: hidden; background: linear-gradient(160deg, var(--cream-dark), #c8b99a); }
+  .dessert-photo:nth-child(1) { aspect-ratio: 2/3; }
+  .dessert-photo:nth-child(2) { aspect-ratio: 1; margin-top: 40px; }
+  .dessert-photo:nth-child(3) { grid-column: 1 / -1; aspect-ratio: 16/7; }
+  .dessert-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .dessert-photo .img-placeholder { width: 100%; height: 100%; min-height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: var(--text-light); font-size: 0.68rem; letter-spacing: 0.08em; text-align: center; }
+
+  /* FOOTER */
+  footer { background: var(--forest); color: var(--cream); padding: 80px; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 64px; align-items: start; }
+  .footer-logo { margin-bottom: 20px; }
+  .footer-logo svg { height: 50px; width: auto; fill: var(--cream); display: block; }
+  .footer-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.8; color: rgba(234,226,206,0.65); max-width: 280px; }
+  .footer-col h4 { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 20px; }
+  .footer-col p, .footer-col a { display: block; font-size: 0.82rem; font-weight: 300; line-height: 2.0; color: rgba(234,226,206,0.72); text-decoration: none; font-style: normal; }
+  .footer-col a:hover { color: var(--cream); }
+  .footer-bottom { background: rgba(0,0,0,0.2); text-align: center; padding: 20px; font-size: 0.68rem; color: rgba(234,226,206,0.4); letter-spacing: 0.06em; }
+
+  /* ANIMATE */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+
+  /* RESPONSIVE */
+  @media (max-width: 960px) {
+    nav { padding: 12px 24px; }
+    .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-text { padding: 56px 28px 48px; }
+    .hero-image { height: 60vw; }
+    .hero-accent { left: 28px; bottom: 28px; }
+    section { padding: 72px 28px; }
+    #philosophy { grid-template-columns: 1fr; gap: 48px; padding: 72px 28px; }
+    .spaces-grid { grid-template-columns: 1fr; }
+    .space-card:nth-child(2) .img-wrap { aspect-ratio: 3/2; margin-top: 0; }
+    .menu-grid { grid-template-columns: 1fr; }
+    .menu-item:nth-child(even) { padding-left: 0; border-left: none; }
+    #desserts { padding: 72px 28px; }
+    .desserts-layout { grid-template-columns: 1fr; gap: 48px; }
+    .desserts-visual { padding-top: 0; }
+    footer { grid-template-columns: 1fr; gap: 40px; padding: 56px 28px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <a href="#home" class="nav-logo" aria-label="Smiché Pizzerie — Home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 889.89307" aria-hidden="true" focusable="false"><g><g><path d="M185.81905,559.95974q-8.06074-18.4335-27.25971-31.29009t-48.37492-12.86179a93.50821,93.50821,0,0,0-36.47125,6.91q-16.512,6.91255-26.10371,19.00108a41.94307,41.94307,0,0,0-9.59688,26.68692,48.197,48.197,0,0,0,4.9885,21.11521q7.29529,14.20785,23.9948,23.22413,16.6995,9.02928,47.03146,20.54241,23.79953,8.834,38.77283,15.92884a122.03408,122.03408,0,0,1,27.45238,17.8555,57.83341,57.83341,0,0,1,17.465,25.33825,53.39075,53.39075,0,0,1,2.68692,17.65763q0,17.668-10.555,34.16966-10.568,16.512-31.86288,27.067-21.30787,10.56021-52.02,10.555-48.38013,0-74.48384-20.34454Q5.37123,741.16781,0,711.60391l6.91517-.38533Q14.97592,736.94738,38.2,754.79766q23.22934,17.84769,61.23671,17.8503,19.199,0,33.21155-6.91,14.01258-6.91257,21.30787-18.043a42.74365,42.74365,0,0,0,7.29009-23.80734,39.73508,39.73508,0,0,0-8.44609-24.56758,83.023,83.023,0,0,0-26.68171-22.266q-16.32457-8.834-44.34454-19.58429Q54.90475,646.73,39.5435,638.66141a82.70619,82.70619,0,0,1-26.10371-21.30788Q2.68431,604.10642,2.68692,584.142a62.1485,62.1485,0,0,1,13.05966-38.3875q13.044-17.27751,36.65871-27.25971,23.61989-9.98221,53.5613-9.98221,8.06074,0,11.89846.38533,31.09481,1.92146,50.0985,16.6995,19.01149,14.78586,25.53612,34.36234Zm176.78976,197.202q-8.959-26.22869-23.67195-65.58472-1.281-4.47559-3.52007-10.23736H254.15318l-27.192,75.82208H218.9629l79.98264-223.9514h15.0384q49.583,137.89977,84.46084,223.9514ZM256.71512,673.98187h75.82209q-16.64483-45.11521-39.0332-103.33695ZM581.11868,533.21033h7.35778v223.9514H578.2391q-19.5114-27.82989-48.94771-63.98611-29.43892-36.14841-78.70167-95.01584l-27.19723-32.63354V757.16173h-7.35778V533.21033h25.27577q18.8709,26.2365,40.47038,53.26969,21.59688,27.041,54.8683,67.34476Q565.4476,688.7,581.11868,708.214ZM876.7264,645.186q0,43.514,1.281,111.9757H845.05619q1.27317-43.50618,1.281-107.17465,0-51.83252-.96334-97.26015l-82.86222,204.4348h-9.59688Q735.317,711.09361,696.92688,618.31166,674.53331,564.56551,669.412,551.446V757.16173h-7.35778V533.21033h35.51313q15.99653,42.88132,30.233,77.74355,14.23128,34.87524,36.63268,87.66327,1.27315,3.20242,3.20243,7.35778,1.91364,4.16315,3.8325,9.27923l73.58819-181.40334v-.64049h32.95119Q876.72641,601.03937,876.7264,645.186Zm60.1432-111.9757q-1.281,45.11522-1.27576,111.9757,0,66.22782,1.27576,111.9757H903.60078q1.59341-56.94077,1.59861-111.9757,0-55.34736-1.59861-111.9757Zm233.54828,169.88241q-8.63875,23.36211-31.03493,39.67368-22.40139,16.31677-57.58646,16.31417-38.07768,0-65.10567-16.15275-27.041-16.15273-40.63181-42.23042a120.11167,120.11167,0,0,1,0-111.01757q13.59081-26.07246,40.309-42.23042,26.71294-16.15274,64.14753-16.158,37.10915,0,59.50792,16.31937,22.38578,16.31678,29.754,39.66848l-22.07854.32285a75.88687,75.88687,0,0,0-22.5524-36.315q-16.4808-14.87177-42.70948-14.877-28.79844,0-48.79149,13.91885a86.25261,86.25261,0,0,0-30.0716,36.7889,121.1943,121.1943,0,0,0-10.08115,49.432,132.88952,132.88952,0,0,0,10.23736,51.50965,102.88284,102.88284,0,0,0,30.233,40.94945q19.99566,16.31678,47.51052,18.87611a85.23273,85.23273,0,0,0,12.15882.64049q26.54892,0,44.79236-13.27837,18.23042-13.27056,26.23389-32.47212Zm201.86765-169.88241q-1.281,45.11522-1.281,111.9757,0,66.22782,1.281,111.9757h-33.274q1.27315-41.905,1.281-102.37882H1225.11955q0,60.47126,1.27576,102.37882h-33.26882q1.5934-56.94077,1.59861-111.9757,0-55.34736-1.59861-111.9757h33.26882q-1.281,57.58907-1.27576,93.09959v21.11521h115.17292V626.30992q0-35.50791-1.281-93.09959ZM1548.24734,749.804v7.35777h-150.3632q1.59341-56.94077,1.59861-111.9757,0-55.34736-1.59861-111.9757h142.36494v7.04014H1430.83532q-.96072,43.514-.95812,94.05772v22.07854h79.01931v7.35778H1429.8772q0,46.38837.95812,86.69993Zm166.36494,0v7.35777H1570.64352q1.5934-56.94077,1.59861-111.9757,0-55.34736-1.59861-111.9757h33.26883q-1.60122,57.58907-1.59862,113.25668,0,39.99912,1.281,103.97743ZM1920,770.7291v8.82621H1739.56q1.91366-68.32891,1.92146-134.37188,0-66.40746-1.92146-134.36667h170.84313v8.44608H1779.10349q-1.14819,52.21523-1.15079,112.87134v26.489h94.82838v8.83142H1777.9527q0,55.66761,1.15079,104.03992ZM1129.11369,384.58972a228.65768,228.65768,0,0,0,60.44066-155.038C1189.55435,102.97765,1086.5767,0,960,0S730.44565,102.97765,730.44565,229.55175a228.65575,228.65575,0,0,0,60.48948,155.08906,5.15451,5.15451,0,0,0,1.0167,1.06618,230.769,230.769,0,0,0,66.43611,49.61032,5.13924,5.13924,0,0,0,1.17813.60436,227.78706,227.78706,0,0,0,81.65936,22.35258c.10089.00585.18616.05858.289.05858.04686,0,.08462-.02506.13083-.02636,6.06249.48231,12.17054.79963,18.35474.79963s12.29225-.31732,18.35474-.79963c.04621.0013.084.02636.13083.02636.10284,0,.18876-.05273.28965-.05858a227.7734,227.7734,0,0,0,81.90085-22.47722,5.04362,5.04362,0,0,0,.46865-.24018,230.759,230.759,0,0,0,66.8364-49.77924A5.17933,5.17933,0,0,0,1129.11369,384.58972ZM960,10.66435c120.69777,0,218.89,98.19223,218.89,218.8874A217.81465,217.81465,0,0,1,1130.15057,367.044V234.496a5.33229,5.33229,0,0,0-2.82751-4.70732L1064.092,196.16446V166.12541a5.33226,5.33226,0,0,0-2.82751-4.70731l-98.75982-52.51986a5.33219,5.33219,0,0,0-5.00932,0L858.73552,161.4181a5.33226,5.33226,0,0,0-2.82751,4.70731v30.03905l-63.23628,33.62421a5.33229,5.33229,0,0,0-2.82751,4.70732V367.03721A217.811,217.811,0,0,1,741.11,229.55175C741.11,108.85658,839.30223,10.66435,960,10.66435Zm93.42764,416.78716a217.11982,217.11982,0,0,1-69.60989,19.67086V359.26188a219.70665,219.70665,0,0,1,69.60989,19.64287Zm10.66435-43.15275a217.66413,217.66413,0,0,1,29.06922,18.80842A219.497,219.497,0,0,1,1064.092,422.065ZM983.81775,348.538V269.92319a23.92891,23.92891,0,0,0-7.42547-17.2801,23.50722,23.50722,0,0,0-17.668-6.5038c-12.63789.66132-22.542,11.5678-22.542,24.83055V348.538a230.3803,230.3803,0,0,0-69.60989,18.63137V169.32784L960,119.64591l93.42764,49.68193v197.8415A230.3803,230.3803,0,0,0,983.81775,348.538Zm-10.66435-.87123c-4.37406-.25288-8.75657-.427-13.1534-.427s-8.77934.17411-13.1534.427v-76.6969c0-7.46192,5.57692-13.82252,12.44-14.18182a13.15554,13.15554,0,0,1,13.86679,13.13517Zm-106.581,31.238a219.70665,219.70665,0,0,1,69.60989-19.64287v87.86049a217.11982,217.11982,0,0,1-69.60989-19.67086ZM855.908,422.065a219.497,219.497,0,0,1-29.06922-18.9578A217.66413,217.66413,0,0,1,855.908,384.29876Zm-55.39944-42.82534V237.701L855.908,208.24127V372.20992a228.40425,228.40425,0,0,0-37.56867,24.01334A220.70389,220.70389,0,0,1,800.50857,379.23964Zm146.338,68.77121V358.35094c4.3734-.26491,8.75592-.44684,13.1534-.44684s8.78.18193,13.1534.44684v89.65991c-4.35583.25971-8.73379.43089-13.1534.43089S951.20243,448.27056,946.8466,448.01085Zm154.81406-51.78759a228.40425,228.40425,0,0,0-37.56867-24.01334V208.24387l55.39423,29.45715V379.24485A220.7931,220.7931,0,0,1,1101.66066,396.22326ZM960,162.17054a23.81775,23.81775,0,1,0,23.81775,23.81774A23.84547,23.84547,0,0,0,960,162.17054Zm0,36.97114a13.1534,13.1534,0,1,1,13.1534-13.1534A13.16724,13.16724,0,0,1,960,199.14168ZM408.5659,889.89307v-7.21718l7.45151-1.40594V830.32788l-7.45151-1.406v-7.264h32.00868a29.537,29.537,0,0,1,13.09612,2.6713,19.63263,19.63263,0,0,1,8.368,7.43068,22.76112,22.76112,0,0,1,0,22.25558,19.30365,19.30365,0,0,1-8.368,7.38382,29.98664,29.98664,0,0,1-13.09612,2.62443H427.82735V881.27l7.45151,1.40594v7.21718Zm19.26145-35.008h12.74723q6.27988,0,9.41983-3.37427a12.03054,12.03054,0,0,0,3.13995-8.5294,12.497,12.497,0,0,0-3.13995-8.71686q-3.13994-3.468-9.41983-3.468H427.82735Zm138.25125,35.008v-7.21718l7.4515-1.40594V830.32788l-7.4515-1.406v-7.264h26.66608v7.264l-7.40464,1.406V881.27l7.40464,1.40594v7.21718Zm129.58125,0v-8.15448l34.21133-50.94207H706.67309l-.98417,8.76373h-9.1855l.328-17.90237h47.23975V829.578L709.7193,880.8013h25.96311l.98417-9.13864h9.13864l-.46865,18.23041Zm152.87307,0v-8.15448l34.21133-50.94207H859.54616l-.98416,8.76373h-9.18551l.32806-17.90237h47.23974V829.578L862.59237,880.8013h25.96312l.98416-9.13864h9.13864l-.46865,18.23041Zm152.1675,0v-7.21718l7.45672-1.40594V830.32788l-7.45672-1.406v-7.264h51.97831v17.57431h-9.18551l-.80191-8.48253h-22.72423V850.058h23.94272v9.13864h-23.94272V880.895h23.99479l.79149-8.67h9.09178v17.668Zm157.23671,0v-7.21718l7.4463-1.40594V830.32788l-7.4463-1.406v-7.264H1189.472a32.871,32.871,0,0,1,13.12215,2.36407,18.29981,18.29981,0,0,1,8.30028,6.77457,20.9746,20.9746,0,0,1,.02083,21.08918,18.91741,18.91741,0,0,1-7.915,6.91,27.978,27.978,0,0,1-11.93491,2.55673l-13.872.1406V881.27l7.45672,1.40594v7.21718Zm19.25624-37.58559h11.76828q6.65481,0,9.84162-2.69733,3.18679-2.68692,3.1868-7.84726a10.58586,10.58586,0,0,0-3.09307-7.993q-3.09309-2.96811-9.425-2.97332h-12.27859Zm25.11955,37.58559-13.02842-31.39943,11.0601-1.82773,11.0601,24.79149,5.34259,1.12476v7.31091Zm117.12042,0v-7.21718l7.4463-1.40594V830.32788l-7.4463-1.406v-7.264h26.66088v7.264l-7.40465,1.406V881.27l7.40465,1.40594v7.21718Zm125.69147,0v-7.21718l4.96767-.703,22.58885-60.315H1484.158l22.30766,60.315,4.96767.703v7.21718h-21.69321v-7.21718l4.87394-.89043-3.6138-10.732h-25.40074l-3.69711,10.732,4.9156.89043v7.21718Zm23.5678-27.88457h19.26665l-8.86266-25.26014-.604-1.82773h-.28119l-.65611,1.92146Z"/></g></g></svg>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#philosophy">Our Story</a></li>
+      <li><a href="#spaces">The Place</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#desserts">Desserts</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home" aria-label="Welcome to Smiché">
+  <div class="hero-text">
+    <p class="hero-eyebrow">Artigianale · Autentica · Italiana</p>
+    <h1 class="hero-title">A pizza<br><em>worth<br>every bite</em></h1>
+    <p class="hero-desc">48 hours of leavening. Unrefined local flours. Ingredients with DOP designation. This is not fast food — it's a craft born from years of research and passion.</p>
+    <a href="#menu" class="btn-primary">Discover the Menu</a>
+    <div class="hero-accent" aria-hidden="true"><span class="hero-accent-line"></span>Cesena · Est. with love</div>
+  </div>
+  <div class="hero-image">
+    <!-- Replace with: <img src="images/hero.jpg" alt="Freshly baked pizza at Smiché Pizzerie, Cesena"> -->
+    <div class="photo-placeholder" role="img" aria-label="Hero photo — replace with your own">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+      <span>Replace with your<br>hero photo</span>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy" aria-labelledby="philosophy-heading">
+  <div class="philosophy-text reveal">
+    <p class="section-eyebrow">The craft</p>
+    <h2 class="section-title" id="philosophy-heading">Made<br><em>with intention</em></h2>
+    <p>Our pizza is the result of years of experience, study, and research. We started by selecting the best local flours, favoring those that are unrefined and rich in fiber. Among all, we have selected three which, mixed, give rise to a unique and particular mix. The high hydration, the moderate use of sodium, and the 48 hours of leavening allow us to obtain a soft, tasty, light pizza, but above all, easy to digest.</p>
+  </div>
+  <div class="philosophy-visual reveal" aria-hidden="true">
+    <div class="ph-card"><div class="ph-card-num">3</div><div class="ph-card-label">Local Flour<br>Varieties</div></div>
+    <div class="ph-card"><div class="ph-card-num">48h</div><div class="ph-card-label">Leavening<br>Time</div></div>
+    <div class="ph-card"><div class="ph-card-num">100%</div><div class="ph-card-label">Italian Extra<br>Virgin Olive Oil</div></div>
+    <div class="ph-card"><div class="ph-card-num">DOP</div><div class="ph-card-label">Certified<br>Ingredients</div></div>
+  </div>
+</section>
+
+<!-- SPACES -->
+<section id="spaces" aria-labelledby="spaces-heading">
+  <div class="spaces-intro reveal">
+    <p class="section-eyebrow">The Experience</p>
+    <h2 class="section-title" id="spaces-heading">Our <em>spaces</em></h2>
+    <p>Whether you prefer the warmth of our dining rooms or the open air of the terrace, every corner of Smiché is designed to make you feel at home.</p>
+  </div>
+  <div class="spaces-grid">
+    <article class="space-card reveal">
+      <div class="img-wrap">
+        <!-- <img src="images/room-main.jpg" alt="The main dining room at Smiché Pizzerie"> -->
+        <div class="img-placeholder" role="img" aria-label="Main dining room photo placeholder"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Main Room Photo</span></div>
+      </div>
+      <div class="space-card-info"><h3>The Main Room</h3><p>Warm, intimate, perfectly lit for an evening you'll want to linger in.</p></div>
+    </article>
+    <article class="space-card reveal">
+      <div class="img-wrap">
+        <!-- <img src="images/terrace.jpg" alt="The outdoor terrace at Smiché Pizzerie"> -->
+        <div class="img-placeholder" role="img" aria-label="Terrace photo placeholder"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Terrace Photo</span></div>
+      </div>
+      <div class="space-card-info"><h3>The Terrace</h3><p>Open sky, good company, and the scent of wood fire in the air.</p></div>
+    </article>
+    <article class="space-card reveal">
+      <div class="img-wrap">
+        <!-- <img src="images/room-side.jpg" alt="The side dining room at Smiché Pizzerie"> -->
+        <div class="img-placeholder" role="img" aria-label="Side room photo placeholder"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Side Room Photo</span></div>
+      </div>
+      <div class="space-card-info"><h3>The Side Room</h3><p>Perfect for groups and celebrations, with a relaxed, convivial atmosphere.</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" aria-labelledby="menu-heading">
+  <div class="menu-header reveal">
+    <p class="section-eyebrow">What we serve</p>
+    <h2 class="section-title" id="menu-heading">The <em>Menu</em></h2>
+  </div>
+  <h3 class="menu-title-main">The specialties</h3>
+  <div class="menu-grid" role="list" aria-label="Pizza specialties">
+    <div class="menu-item reveal" role="listitem" itemscope itemtype="https://schema.org/MenuItem">
+      <div class="menu-item-name" itemprop="name">Marinara</div>
+      <div class="menu-item-price">7</div>
+      <div class="menu-item-desc" itemprop="description">hand-crushed Italian peeled tomatoes, Calabrian oregano, finely chopped garlic, 100% Italian extra virgin olive oil, fresh basil</div>
+    </div>
+    <div class="menu-item reveal" role="listitem" itemscope itemtype="https://schema.org/MenuItem">
+      <div class="menu-item-name" itemprop="name">Bufala</div>
+      <div class="menu-item-price">11</div>
+      <div class="menu-item-desc" itemprop="description">San Marzano DOP peeled tomatoes, buffalo mozzarella from Campania DOP, Parmigiano Reggiano, 100% Italian extra virgin olive oil, fresh basil</div>
+    </div>
+    <div class="menu-item reveal" role="listitem" itemscope itemtype="https://schema.org/MenuItem">
+      <div class="menu-item-name" itemprop="name">Veneta</div>
+      <div class="menu-item-price">12,5</div>
+      <div class="menu-item-desc" itemprop="description">white base without tomato, mozzarella from 100% Italian milk, smoked provola cheese, drops of truffle-flavored oil, premium Treviso porchetta added after baking</div>
+    </div>
+    <div class="menu-item reveal" role="listitem" itemscope itemtype="https://schema.org/MenuItem">
+      <div class="menu-item-name" itemprop="name">Saporita</div>
+      <div class="menu-item-price">12</div>
+      <div class="menu-item-desc" itemprop="description">white base without tomato, mozzarella from 100% Italian milk, Gorgonzola DOP, grated Grana Padano DOP, premium cooked ham added after baking</div>
+    </div>
+    <div class="menu-item reveal" role="listitem" itemscope itemtype="https://schema.org/MenuItem">
+      <div class="menu-item-name" itemprop="name">Sarda</div>
+      <div class="menu-item-price">11</div>
+      <div class="menu-item-desc" itemprop="description">Italian peeled tomatoes, Calabrian oregano, mozzarella from 100% Italian milk, preservative-free pork sausage, grated Pecorino Sardo DOP (cooked)</div>
+    </div>
+    <!-- Add more pizzas: copy a .menu-item block and fill in name, price, desc -->
+    <div class="menu-item reveal" style="opacity:0.35;pointer-events:none;" role="listitem">
+      <div class="menu-item-name" style="font-style:italic;color:var(--text-light)">More items…</div>
+      <div class="menu-item-price" style="color:var(--text-light)">—</div>
+      <div class="menu-item-desc">Copy a .menu-item block above to add more pizzas.</div>
+    </div>
+  </div>
+  <p class="menu-footer-note reveal">AVAILABLE: lactose-free mozzarella and gluten-free bases.</p>
+</section>
+
+<!-- DESSERTS -->
+<section id="desserts" aria-labelledby="desserts-heading">
+  <div class="desserts-layout">
+    <div>
+      <div class="reveal">
+        <p class="section-eyebrow">A sweet ending</p>
+        <h2 class="section-title" id="desserts-heading">Homemade<br><em>desserts</em></h2>
+        <p style="font-size:0.9rem;font-weight:300;line-height:1.9;color:var(--text-mid);max-width:480px;margin-bottom:48px;">Every dessert at Smiché is made in-house, with the same care we put into every pizza. We believe a meal deserves a proper ending — something crafted, seasonal, and genuinely homemade.</p>
+      </div>
+      <div role="list" aria-label="Homemade desserts">
+        <div class="dessert-item reveal" role="listitem" itemscope itemtype="https://schema.org/MenuItem">
+          <div class="dessert-info">
+            <div class="dessert-name" itemprop="name">Tiramisù</div>
+            <div class="dessert-desc" itemprop="description">classic recipe, Savoiardo biscuits, mascarpone cream, espresso, cocoa</div>
+          </div>
+          <div class="dessert-price">5</div>
+        </div>
+        <div class="dessert-item reveal" role="listitem" itemscope itemtype="https://schema.org/MenuItem">
+          <div class="dessert-info">
+            <div class="dessert-name" itemprop="name">Panna Cotta</div>
+            <div class="dessert-desc" itemprop="description">silky vanilla cream, seasonal berry coulis, fresh mint</div>
+          </div>
+          <div class="dessert-price">5</div>
+        </div>
+        <div class="dessert-item reveal" role="listitem" itemscope itemtype="https://schema.org/MenuItem">
+          <div class="dessert-info">
+            <div class="dessert-name" itemprop="name">Torta della Casa</div>
+            <div class="dessert-desc" itemprop="description">our baker's creation of the day — ask your server what's on tonight</div>
+          </div>
+          <div class="dessert-price">5</div>
+        </div>
+        <!-- Add more desserts: copy a .dessert-item block -->
+        <div class="dessert-item reveal" style="opacity:0.35;pointer-events:none;" role="listitem">
+          <div class="dessert-info">
+            <div class="dessert-name" style="font-style:italic;color:var(--text-light)">More desserts…</div>
+            <div class="dessert-desc">Copy a .dessert-item block above to add more.</div>
+          </div>
+          <div class="dessert-price" style="color:var(--text-light)">—</div>
+        </div>
+      </div>
+    </div>
+    <div class="desserts-visual reveal" aria-hidden="true">
+      <div class="dessert-photo">
+        <!-- <img src="images/dessert1.jpg" alt="Homemade tiramisù at Smiché"> -->
+        <div class="img-placeholder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Dessert photo</span></div>
+      </div>
+      <div class="dessert-photo">
+        <!-- <img src="images/dessert2.jpg" alt="Homemade panna cotta at Smiché"> -->
+        <div class="img-placeholder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Dessert photo</span></div>
+      </div>
+      <div class="dessert-photo" style="grid-column:1/-1;aspect-ratio:16/7;">
+        <!-- <img src="images/dessert3.jpg" alt="Torta della casa at Smiché"> -->
+        <div class="img-placeholder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Dessert photo</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer id="contact" role="contentinfo">
+  <div>
+    <div class="footer-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 889.89307" aria-label="Smiché Pizzerie" role="img"><g><g><path d="M185.81905,559.95974q-8.06074-18.4335-27.25971-31.29009t-48.37492-12.86179a93.50821,93.50821,0,0,0-36.47125,6.91q-16.512,6.91255-26.10371,19.00108a41.94307,41.94307,0,0,0-9.59688,26.68692,48.197,48.197,0,0,0,4.9885,21.11521q7.29529,14.20785,23.9948,23.22413,16.6995,9.02928,47.03146,20.54241,23.79953,8.834,38.77283,15.92884a122.03408,122.03408,0,0,1,27.45238,17.8555,57.83341,57.83341,0,0,1,17.465,25.33825,53.39075,53.39075,0,0,1,2.68692,17.65763q0,17.668-10.555,34.16966-10.568,16.512-31.86288,27.067-21.30787,10.56021-52.02,10.555-48.38013,0-74.48384-20.34454Q5.37123,741.16781,0,711.60391l6.91517-.38533Q14.97592,736.94738,38.2,754.79766q23.22934,17.84769,61.23671,17.8503,19.199,0,33.21155-6.91,14.01258-6.91257,21.30787-18.043a42.74365,42.74365,0,0,0,7.29009-23.80734,39.73508,39.73508,0,0,0-8.44609-24.56758,83.023,83.023,0,0,0-26.68171-22.266q-16.32457-8.834-44.34454-19.58429Q54.90475,646.73,39.5435,638.66141a82.70619,82.70619,0,0,1-26.10371-21.30788Q2.68431,604.10642,2.68692,584.142a62.1485,62.1485,0,0,1,13.05966-38.3875q13.044-17.27751,36.65871-27.25971,23.61989-9.98221,53.5613-9.98221,8.06074,0,11.89846.38533,31.09481,1.92146,50.0985,16.6995,19.01149,14.78586,25.53612,34.36234Zm176.78976,197.202q-8.959-26.22869-23.67195-65.58472-1.281-4.47559-3.52007-10.23736H254.15318l-27.192,75.82208H218.9629l79.98264-223.9514h15.0384q49.583,137.89977,84.46084,223.9514ZM256.71512,673.98187h75.82209q-16.64483-45.11521-39.0332-103.33695ZM581.11868,533.21033h7.35778v223.9514H578.2391q-19.5114-27.82989-48.94771-63.98611-29.43892-36.14841-78.70167-95.01584l-27.19723-32.63354V757.16173h-7.35778V533.21033h25.27577q18.8709,26.2365,40.47038,53.26969,21.59688,27.041,54.8683,67.34476Q565.4476,688.7,581.11868,708.214ZM876.7264,645.186q0,43.514,1.281,111.9757H845.05619q1.27317-43.50618,1.281-107.17465,0-51.83252-.96334-97.26015l-82.86222,204.4348h-9.59688Q735.317,711.09361,696.92688,618.31166,674.53331,564.56551,669.412,551.446V757.16173h-7.35778V533.21033h35.51313q15.99653,42.88132,30.233,77.74355,14.23128,34.87524,36.63268,87.66327,1.27315,3.20242,3.20243,7.35778,1.91364,4.16315,3.8325,9.27923l73.58819-181.40334v-.64049h32.95119Q876.72641,601.03937,876.7264,645.186Zm60.1432-111.9757q-1.281,45.11522-1.27576,111.9757,0,66.22782,1.27576,111.9757H903.60078q1.59341-56.94077,1.59861-111.9757,0-55.34736-1.59861-111.9757Zm233.54828,169.88241q-8.63875,23.36211-31.03493,39.67368-22.40139,16.31677-57.58646,16.31417-38.07768,0-65.10567-16.15275-27.041-16.15273-40.63181-42.23042a120.11167,120.11167,0,0,1,0-111.01757q13.59081-26.07246,40.309-42.23042,26.71294-16.15274,64.14753-16.158,37.10915,0,59.50792,16.31937,22.38578,16.31678,29.754,39.66848l-22.07854.32285a75.88687,75.88687,0,0,0-22.5524-36.315q-16.4808-14.87177-42.70948-14.877-28.79844,0-48.79149,13.91885a86.25261,86.25261,0,0,0-30.0716,36.7889,121.1943,121.1943,0,0,0-10.08115,49.432,132.88952,132.88952,0,0,0,10.23736,51.50965,102.88284,102.88284,0,0,0,30.233,40.94945q19.99566,16.31678,47.51052,18.87611a85.23273,85.23273,0,0,0,12.15882.64049q26.54892,0,44.79236-13.27837,18.23042-13.27056,26.23389-32.47212Zm201.86765-169.88241q-1.281,45.11522-1.281,111.9757,0,66.22782,1.281,111.9757h-33.274q1.27315-41.905,1.281-102.37882H1225.11955q0,60.47126,1.27576,102.37882h-33.26882q1.5934-56.94077,1.59861-111.9757,0-55.34736-1.59861-111.9757h33.26882q-1.281,57.58907-1.27576,93.09959v21.11521h115.17292V626.30992q0-35.50791-1.281-93.09959ZM1548.24734,749.804v7.35777h-150.3632q1.59341-56.94077,1.59861-111.9757,0-55.34736-1.59861-111.9757h142.36494v7.04014H1430.83532q-.96072,43.514-.95812,94.05772v22.07854h79.01931v7.35778H1429.8772q0,46.38837.95812,86.69993Zm166.36494,0v7.35777H1570.64352q1.5934-56.94077,1.59861-111.9757,0-55.34736-1.59861-111.9757h33.26883q-1.60122,57.58907-1.59862,113.25668,0,39.99912,1.281,103.97743ZM1920,770.7291v8.82621H1739.56q1.91366-68.32891,1.92146-134.37188,0-66.40746-1.92146-134.36667h170.84313v8.44608H1779.10349q-1.14819,52.21523-1.15079,112.87134v26.489h94.82838v8.83142H1777.9527q0,55.66761,1.15079,104.03992ZM1129.11369,384.58972a228.65768,228.65768,0,0,0,60.44066-155.038C1189.55435,102.97765,1086.5767,0,960,0S730.44565,102.97765,730.44565,229.55175a228.65575,228.65575,0,0,0,60.48948,155.08906,5.15451,5.15451,0,0,0,1.0167,1.06618,230.769,230.769,0,0,0,66.43611,49.61032,5.13924,5.13924,0,0,0,1.17813.60436,227.78706,227.78706,0,0,0,81.65936,22.35258c.10089.00585.18616.05858.289.05858.04686,0,.08462-.02506.13083-.02636,6.06249.48231,12.17054.79963,18.35474.79963s12.29225-.31732,18.35474-.79963c.04621.0013.084.02636.13083.02636.10284,0,.18876-.05273.28965-.05858a227.7734,227.7734,0,0,0,81.90085-22.47722,5.04362,5.04362,0,0,0,.46865-.24018,230.759,230.759,0,0,0,66.8364-49.77924A5.17933,5.17933,0,0,0,1129.11369,384.58972ZM960,10.66435c120.69777,0,218.89,98.19223,218.89,218.8874A217.81465,217.81465,0,0,1,1130.15057,367.044V234.496a5.33229,5.33229,0,0,0-2.82751-4.70732L1064.092,196.16446V166.12541a5.33226,5.33226,0,0,0-2.82751-4.70731l-98.75982-52.51986a5.33219,5.33219,0,0,0-5.00932,0L858.73552,161.4181a5.33226,5.33226,0,0,0-2.82751,4.70731v30.03905l-63.23628,33.62421a5.33229,5.33229,0,0,0-2.82751,4.70732V367.03721A217.811,217.811,0,0,1,741.11,229.55175C741.11,108.85658,839.30223,10.66435,960,10.66435Zm93.42764,416.78716a217.11982,217.11982,0,0,1-69.60989,19.67086V359.26188a219.70665,219.70665,0,0,1,69.60989,19.64287Zm10.66435-43.15275a217.66413,217.66413,0,0,1,29.06922,18.80842A219.497,219.497,0,0,1,1064.092,422.065ZM983.81775,348.538V269.92319a23.92891,23.92891,0,0,0-7.42547-17.2801,23.50722,23.50722,0,0,0-17.668-6.5038c-12.63789.66132-22.542,11.5678-22.542,24.83055V348.538a230.3803,230.3803,0,0,0-69.60989,18.63137V169.32784L960,119.64591l93.42764,49.68193v197.8415A230.3803,230.3803,0,0,0,983.81775,348.538Zm-10.66435-.87123c-4.37406-.25288-8.75657-.427-13.1534-.427s-8.77934.17411-13.1534.427v-76.6969c0-7.46192,5.57692-13.82252,12.44-14.18182a13.15554,13.15554,0,0,1,13.86679,13.13517Zm-106.581,31.238a219.70665,219.70665,0,0,1,69.60989-19.64287v87.86049a217.11982,217.11982,0,0,1-69.60989-19.67086ZM855.908,422.065a219.497,219.497,0,0,1-29.06922-18.9578A217.66413,217.66413,0,0,1,855.908,384.29876Zm-55.39944-42.82534V237.701L855.908,208.24127V372.20992a228.40425,228.40425,0,0,0-37.56867,24.01334A220.70389,220.70389,0,0,1,800.50857,379.23964Zm146.338,68.77121V358.35094c4.3734-.26491,8.75592-.44684,13.1534-.44684s8.78.18193,13.1534.44684v89.65991c-4.35583.25971-8.73379.43089-13.1534.43089S951.20243,448.27056,946.8466,448.01085Zm154.81406-51.78759a228.40425,228.40425,0,0,0-37.56867-24.01334V208.24387l55.39423,29.45715V379.24485A220.7931,220.7931,0,0,1,1101.66066,396.22326ZM960,162.17054a23.81775,23.81775,0,1,0,23.81775,23.81774A23.84547,23.84547,0,0,0,960,162.17054Zm0,36.97114a13.1534,13.1534,0,1,1,13.1534-13.1534A13.16724,13.16724,0,0,1,960,199.14168ZM408.5659,889.89307v-7.21718l7.45151-1.40594V830.32788l-7.45151-1.406v-7.264h32.00868a29.537,29.537,0,0,1,13.09612,2.6713,19.63263,19.63263,0,0,1,8.368,7.43068,22.76112,22.76112,0,0,1,0,22.25558,19.30365,19.30365,0,0,1-8.368,7.38382,29.98664,29.98664,0,0,1-13.09612,2.62443H427.82735V881.27l7.45151,1.40594v7.21718Zm19.26145-35.008h12.74723q6.27988,0,9.41983-3.37427a12.03054,12.03054,0,0,0,3.13995-8.5294,12.497,12.497,0,0,0-3.13995-8.71686q-3.13994-3.468-9.41983-3.468H427.82735Zm138.25125,35.008v-7.21718l7.4515-1.40594V830.32788l-7.4515-1.406v-7.264h26.66608v7.264l-7.40464,1.406V881.27l7.40464,1.40594v7.21718Zm129.58125,0v-8.15448l34.21133-50.94207H706.67309l-.98417,8.76373h-9.1855l.328-17.90237h47.23975V829.578L709.7193,880.8013h25.96311l.98417-9.13864h9.13864l-.46865,18.23041Zm152.87307,0v-8.15448l34.21133-50.94207H859.54616l-.98416,8.76373h-9.18551l.32806-17.90237h47.23974V829.578L862.59237,880.8013h25.96312l.98416-9.13864h9.13864l-.46865,18.23041Zm152.1675,0v-7.21718l7.45672-1.40594V830.32788l-7.45672-1.406v-7.264h51.97831v17.57431h-9.18551l-.80191-8.48253h-22.72423V850.058h23.94272v9.13864h-23.94272V880.895h23.99479l.79149-8.67h9.09178v17.668Zm157.23671,0v-7.21718l7.4463-1.40594V830.32788l-7.4463-1.406v-7.264H1189.472a32.871,32.871,0,0,1,13.12215,2.36407,18.29981,18.29981,0,0,1,8.30028,6.77457,20.9746,20.9746,0,0,1,.02083,21.08918,18.91741,18.91741,0,0,1-7.915,6.91,27.978,27.978,0,0,1-11.93491,2.55673l-13.872.1406V881.27l7.45672,1.40594v7.21718Zm19.25624-37.58559h11.76828q6.65481,0,9.84162-2.69733,3.18679-2.68692,3.1868-7.84726a10.58586,10.58586,0,0,0-3.09307-7.993q-3.09309-2.96811-9.425-2.97332h-12.27859Zm25.11955,37.58559-13.02842-31.39943,11.0601-1.82773,11.0601,24.79149,5.34259,1.12476v7.31091Zm117.12042,0v-7.21718l7.4463-1.40594V830.32788l-7.4463-1.406v-7.264h26.66088v7.264l-7.40465,1.406V881.27l7.40465,1.40594v7.21718Zm125.69147,0v-7.21718l4.96767-.703,22.58885-60.315H1484.158l22.30766,60.315,4.96767.703v7.21718h-21.69321v-7.21718l4.87394-.89043-3.6138-10.732h-25.40074l-3.69711,10.732,4.9156.89043v7.21718Zm23.5678-27.88457h19.26665l-8.86266-25.26014-.604-1.82773h-.28119l-.65611,1.92146Z"/></g></g></svg>
+    </div>
+    <p class="footer-tagline">Crafted with local flour, certified ingredients, and 48 hours of patience.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Visit us</h4>
+    <address style="font-style:normal">
+      <p>Via Example, 1</p>
+      <p>Cesena, FC 47521</p>
+      <p style="margin-top:12px;">Mon – Sun</p>
+      <p>12:00 – 14:30</p>
+      <p>18:30 – 23:00</p>
+    </address>
+  </div>
+  <div class="footer-col">
+    <h4>Reservations</h4>
+    <a href="tel:+390547000000">+39 0547 000 000</a>
+    <a href="mailto:info@smiche.it">info@smiche.it</a>
+    <a href="https://instagram.com/smiche" target="_blank" rel="noopener noreferrer" style="margin-top:16px;">Instagram ↗</a>
+  </div>
+</footer>
+<div class="footer-bottom">© 2026 Smiché Pizzerie · All rights reserved · Cesena, Italy</div>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); }, { passive: true });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 55);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
