@@ -1,0 +1,7 @@
+- traduzione in italiano, tedesco e inglese
+- indirizzo e contatti
+- search for @todo@ keyword in the code
+- sostituire questo testo e tutto quello che non c'entra: "Artisanal pizzeria in Cesena with 48-hour leavened pizza, unrefined local flours, DOP-certified ingredients, homemade desserts, and a terrace."
+- controllare che is tutto responsive
+- controllare che sia tutto SEO-friendly
+- è possibile caricare dei video o avere una sezione "reels"? (sempre essendo SEO-friendly). Video in questione: https://www.instagram.com/p/DSPibFyDVPl/
