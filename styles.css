@@ -92,6 +92,8 @@
   .menu-item-name { font-family: var(--font-title); font-size: 1.5rem; font-weight: 500; color: var(--forest); line-height: 1; grid-column: 1; }
   .menu-item-price { font-family: var(--font-title); font-size: 1.4rem; font-weight: 300; color: var(--terracotta); grid-column: 2; grid-row: 1; white-space: nowrap; }
   .menu-item-desc { font-size: 0.78rem; font-weight: 300; line-height: 1.75; color: var(--text-mid); grid-column: 1 / -1; margin-top: 6px; }
+  .menu-gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 920px; margin: 0 auto 56px; }
+  .menu-gallery img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; }
   .menu-footer-note { text-align: center; margin-top: 40px; font-size: 0.7rem; font-weight: 400; font-style: italic; color: var(--text-light); letter-spacing: 0.04em; }
 
   /* ACCORDION */
@@ -153,6 +155,7 @@
     #philosophy { grid-template-columns: 1fr; gap: 48px; padding: 72px 28px; }
     .spaces-grid { grid-template-columns: 1fr; }
     .space-card:nth-child(2) .img-wrap { aspect-ratio: 3/2; margin-top: 0; }
+    .menu-gallery { grid-template-columns: repeat(2, 1fr); }
     .menu-grid { grid-template-columns: 1fr; }
     .menu-item:nth-child(even) { padding-left: 0; border-left: none; }
     #desserts { padding: 72px 28px; }

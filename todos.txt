@@ -1,4 +1,5 @@
 - traduzione in italiano, tedesco e inglese
+- le traduzioni devono essere le stesse dei menù cartacei
 - indirizzo e contatti
 - search for @todo@ keyword in the code
 - sostituire questo testo e tutto quello che non c'entra: "Artisanal pizzeria in Cesena with 48-hour leavened pizza, unrefined local flours, DOP-certified ingredients, homemade desserts, and a terrace."
