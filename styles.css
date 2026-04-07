@@ -94,6 +94,21 @@
   .menu-item-desc { font-size: 0.78rem; font-weight: 300; line-height: 1.75; color: var(--text-mid); grid-column: 1 / -1; margin-top: 6px; }
   .menu-footer-note { text-align: center; margin-top: 40px; font-size: 0.7rem; font-weight: 400; font-style: italic; color: var(--text-light); letter-spacing: 0.04em; }
 
+  /* ACCORDION */
+  .accordion { max-width: 920px; margin: 0 auto; }
+  .accordion-item { border-top: 1px solid var(--cream-dark); }
+  .accordion-item:last-child { border-bottom: 1px solid var(--cream-dark); }
+  .accordion-trigger { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 36px 0; background: none; border: none; cursor: pointer; text-align: left; }
+  .accordion-label { font-family: var(--font-title); font-size: clamp(1.6rem, 2.8vw, 2.4rem); font-weight: 300; font-style: italic; color: var(--forest); transition: color 0.2s; }
+  .accordion-trigger:hover .accordion-label { color: var(--terracotta); }
+  .accordion-icon { width: 28px; height: 28px; position: relative; flex-shrink: 0; margin-left: 24px; }
+  .accordion-icon::before, .accordion-icon::after { content: ''; position: absolute; background: var(--terracotta); top: 50%; left: 50%; transform: translate(-50%, -50%); transition: transform 0.35s ease, opacity 0.35s ease; }
+  .accordion-icon::before { width: 18px; height: 1px; }
+  .accordion-icon::after { width: 1px; height: 18px; }
+  .accordion-item.open .accordion-icon::after { transform: translate(-50%, -50%) scaleY(0); opacity: 0; }
+  .accordion-panel { height: 0; overflow: hidden; transition: height 0.45s ease; }
+  .accordion-panel-inner { padding-bottom: 48px; }
+
   /* DESSERTS */
   #desserts { background: var(--cream); padding: var(--gap) 80px; }
   .desserts-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
