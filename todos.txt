@@ -1,11 +1,24 @@
-- traduzione in italiano, tedesco e inglese
++----------+
+  todo
++----------+
+- gli orari e l'indirizzo devono essere più evidenti
 - le traduzioni devono essere le stesse dei menù cartacei
-- indirizzo e contatti
-- search for @todo@ keyword in the code
+- caricare anche le foto dell'interno e specificare che la terrazza è aperta solo d'estate
+- search for @todo keyword in the code
 - sostituire questo testo e tutto quello che non c'entra: "Artisanal pizzeria in Cesena with 48-hour leavened pizza, unrefined local flours, DOP-certified ingredients, homemade desserts, and a terrace."
-- controllare che is tutto responsive
+- controllare che sia tutto responsive
 - controllare che sia tutto SEO-friendly
 - è possibile caricare dei video o avere una sezione "reels"? (sempre essendo SEO-friendly). Video in questione: https://www.instagram.com/p/DSPibFyDVPl/
-- specificare il giorno di chiusura
+- introdurre le recensioni?
 
++----------+
+  prompts
++----------+
 - I like the classy look, it reflects our view and the way we want to present the pizzeria. Can you give me alternative thought? Not necessary to be fully functioning
+
++----------+
+  done     
++----------+
+- traduzione in italiano, tedesco e inglese
+- indirizzo e contatti
+- specificare il giorno di chiusura
