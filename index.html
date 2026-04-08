@@ -132,12 +132,19 @@
           />
         </a>
         <ul class="nav-links">
-          <li><a href="#philosophy">Our Story</a></li>
-          <li><a href="#spaces">The Place</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#desserts">Desserts</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#philosophy" data-i18n="nav.philosophy">Our Story</a>
+          </li>
+          <li><a href="#spaces" data-i18n="nav.spaces">The Place</a></li>
+          <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
+          <li><a href="#desserts" data-i18n="nav.desserts">Desserts</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
+        <div class="lang-switcher" role="group" aria-label="Language">
+          <button class="lang-btn" data-lang="it">IT</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="de">DE</button>
+        </div>
       </nav>
     </header>
 
@@ -147,6 +154,7 @@
         class="hero"
         id="home"
         aria-label="Welcome to Pizzeria San Michele"
+        data-i18n-aria="aria.hero"
       >
         <div class="hero-text">
           <div class="hero-brand">
@@ -164,20 +172,26 @@
                 </g>
               </g>
             </svg>
-            <p class="hero-eyebrow">Artigianale · Autentica · Italiana</p>
+            <p class="hero-eyebrow" data-i18n="hero.eyebrow">
+              Artigianale · Autentica · Italiana
+            </p>
           </div>
-          <h1 class="hero-title">
+          <h1 class="hero-title" data-i18n-html="hero.title">
             A pizza<br /><em>worth<br />every bite</em>
           </h1>
-          <p class="hero-desc">
+          <p class="hero-desc" data-i18n="hero.desc">
             48 hours of leavening. Unrefined local flours. Ingredients with DOP
             designation. This is not fast food — it's a craft born from years of
             research and passion.
           </p>
-          <a href="#menu" class="btn-primary">Discover the Menu</a>
+          <a href="#menu" class="btn-primary" data-i18n="hero.cta"
+            >Discover the Menu</a
+          >
           <div class="hero-accent" aria-hidden="true">
-            <span class="hero-accent-line"></span>San Michele di Feletto,
-            Treviso
+            <span class="hero-accent-line"></span
+            ><span data-i18n="hero.accent"
+              >San Michele di Feletto, Treviso</span
+            >
           </div>
         </div>
         <div class="hero-image">
@@ -191,11 +205,15 @@
       <!-- PHILOSOPHY -->
       <section id="philosophy" aria-labelledby="philosophy-heading">
         <div class="philosophy-text reveal">
-          <p class="section-eyebrow">The craft</p>
-          <h2 class="section-title" id="philosophy-heading">
+          <p class="section-eyebrow" data-i18n="phil.eyebrow">The craft</p>
+          <h2
+            class="section-title"
+            id="philosophy-heading"
+            data-i18n-html="phil.title"
+          >
             Made<br /><em>with intention</em>
           </h2>
-          <p>
+          <p data-i18n="phil.text">
             Our pizza is the result of years of experience, study, and research.
             We started by selecting the best local flours, favoring those that
             are unrefined and rich in fiber. Among all, we have selected three
@@ -208,19 +226,27 @@
         <div class="philosophy-visual reveal" aria-hidden="true">
           <div class="ph-card">
             <div class="ph-card-num">3</div>
-            <div class="ph-card-label">Local Flour<br />Varieties</div>
+            <div class="ph-card-label" data-i18n-html="phil.card1.label">
+              Local Flour<br />Varieties
+            </div>
           </div>
           <div class="ph-card">
             <div class="ph-card-num">48h</div>
-            <div class="ph-card-label">Leavening<br />Time</div>
+            <div class="ph-card-label" data-i18n-html="phil.card2.label">
+              Leavening<br />Time
+            </div>
           </div>
           <div class="ph-card">
             <div class="ph-card-num">100%</div>
-            <div class="ph-card-label">Italian Extra<br />Virgin Olive Oil</div>
+            <div class="ph-card-label" data-i18n-html="phil.card3.label">
+              Italian Extra<br />Virgin Olive Oil
+            </div>
           </div>
           <div class="ph-card">
             <div class="ph-card-num">DOP</div>
-            <div class="ph-card-label">Certified<br />Ingredients</div>
+            <div class="ph-card-label" data-i18n-html="phil.card4.label">
+              Certified<br />Ingredients
+            </div>
           </div>
         </div>
       </section>
@@ -228,9 +254,17 @@
       <!-- SPACES -->
       <section id="spaces" aria-labelledby="spaces-heading">
         <div class="spaces-intro reveal">
-          <p class="section-eyebrow">The Experience</p>
-          <h2 class="section-title" id="spaces-heading">Our <em>spaces</em></h2>
-          <p>
+          <p class="section-eyebrow" data-i18n="spaces.eyebrow">
+            The Experience
+          </p>
+          <h2
+            class="section-title"
+            id="spaces-heading"
+            data-i18n-html="spaces.title"
+          >
+            Our <em>spaces</em>
+          </h2>
+          <p data-i18n="spaces.desc">
             Whether you prefer the warmth of our dining rooms or the open air of
             the terrace, every corner of Smiché is designed to make you feel at
             home.
@@ -245,8 +279,8 @@
               />
             </div>
             <div class="space-card-info">
-              <h3>The Terrace at Twilight</h3>
-              <p>
+              <h3 data-i18n="spaces.card1.title">The Terrace at Twilight</h3>
+              <p data-i18n="spaces.card1.desc">
                 As the sun sets, the terrace glows — every table a little world
                 of its own.
               </p>
@@ -260,8 +294,8 @@
               />
             </div>
             <div class="space-card-info">
-              <h3>The Terrace</h3>
-              <p>
+              <h3 data-i18n="spaces.card2.title">The Terrace</h3>
+              <p data-i18n="spaces.card2.desc">
                 Open sky, good company, and the scent of wood fire in the air.
               </p>
             </div>
@@ -274,8 +308,8 @@
               />
             </div>
             <div class="space-card-info">
-              <h3>Dining al Fresco</h3>
-              <p>
+              <h3 data-i18n="spaces.card3.title">Dining al Fresco</h3>
+              <p data-i18n="spaces.card3.desc">
                 Pizza, a glass of wine, and warm summer air — some evenings
                 simply can't be improved.
               </p>
@@ -287,8 +321,14 @@
       <!-- MENU -->
       <section id="menu" aria-labelledby="menu-heading">
         <div class="menu-header reveal">
-          <p class="section-eyebrow">What we serve</p>
-          <h2 class="section-title" id="menu-heading">The <em>Menu</em></h2>
+          <p class="section-eyebrow" data-i18n="menu.eyebrow">What we serve</p>
+          <h2
+            class="section-title"
+            id="menu-heading"
+            data-i18n-html="menu.title"
+          >
+            The <em>Menu</em>
+          </h2>
         </div>
         <div class="menu-gallery">
           <img
@@ -320,7 +360,9 @@
               aria-expanded="true"
               aria-controls="panel-specialita"
             >
-              <span class="accordion-label">Le Specialità</span>
+              <span class="accordion-label" data-i18n="menu.specialita"
+                >Le Specialità</span
+              >
               <span class="accordion-icon" aria-hidden="true"></span>
             </button>
             <div class="accordion-panel" id="panel-specialita">
@@ -329,6 +371,7 @@
                   class="menu-grid"
                   role="list"
                   aria-label="Pizza specialties"
+                  data-i18n-aria="aria.menu.specialties"
                 >
                   <div
                     class="menu-item reveal"
@@ -338,7 +381,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">Marinara</div>
                     <div class="menu-item-price">7</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.marinara.desc"
+                    >
                       hand-crushed Italian peeled tomatoes, Calabrian oregano,
                       finely chopped garlic, 100% Italian extra virgin olive
                       oil, fresh basil
@@ -352,7 +399,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">Bufala</div>
                     <div class="menu-item-price">11</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.bufala.desc"
+                    >
                       San Marzano DOP peeled tomatoes, Campania DOP buffalo
                       mozzarella, Parmigiano Reggiano, 100% Italian extra virgin
                       olive oil, fresh basil
@@ -366,7 +417,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">Veneta</div>
                     <div class="menu-item-price">12,5</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.veneta.desc"
+                    >
                       white base, 100% Italian milk mozzarella, smoked provola,
                       truffle-flavoured oil drops, premium Treviso porchetta
                       added after baking
@@ -380,7 +435,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">Saporita</div>
                     <div class="menu-item-price">12</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.saporita.desc"
+                    >
                       white base, 100% Italian milk mozzarella, Gorgonzola DOP,
                       grated Grana Padano DOP, premium cooked ham added after
                       baking
@@ -394,7 +453,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">Sarda</div>
                     <div class="menu-item-price">11</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.sarda.desc"
+                    >
                       Italian peeled tomatoes, Calabrian oregano, 100% Italian
                       milk mozzarella, preservative-free pork sausage, grated
                       Pecorino Sardo DOP (cooked)
@@ -408,7 +471,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">Bologna</div>
                     <div class="menu-item-price">13</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.bologna.desc"
+                    >
                       white base, 100% Italian milk mozzarella, Bologna IGP
                       mortadella, burrata stracciatella, pistachio crumble
                     </div>
@@ -421,7 +488,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">Gricia</div>
                     <div class="menu-item-price">11,5</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.gricia.desc"
+                    >
                       white base, 100% Italian milk mozzarella, grated Pecorino
                       Romano DOP, Sauris guanciale, freshly ground black pepper
                       added after baking
@@ -437,7 +508,11 @@
                       Salsiccia e friarielli
                     </div>
                     <div class="menu-item-price">12</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.salsicciafriarielli.desc"
+                    >
                       white base, 100% Italian milk mozzarella, friarielli
                       greens*, preservative-free sausage, smoked provola, Grana
                       Padano DOP
@@ -451,7 +526,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">Siciliana</div>
                     <div class="menu-item-price">13</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.siciliana.desc"
+                    >
                       Italian peeled tomatoes, Campania DOP buffalo mozzarella,
                       pitted Garda lake olives, Sicilian capers, whole anchovy
                       fillets, oregano, fresh basil
@@ -465,7 +544,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">Parma DOP</div>
                     <div class="menu-item-price">13</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.parmadop.desc"
+                    >
                       Italian peeled tomatoes, hand-torn buffalo milk
                       mozzarella, Parma ham riserva DOP aged 24 months, fresh
                       basil
@@ -479,7 +562,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">Tirolese</div>
                     <div class="menu-item-price">13</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.tirolese.desc"
+                    >
                       ricotta cream base, 100% Italian milk mozzarella, brie,
                       Sauris IGP speck
                     </div>
@@ -496,12 +583,19 @@
               aria-expanded="false"
               aria-controls="panel-classiche"
             >
-              <span class="accordion-label">Le Classiche</span>
+              <span class="accordion-label" data-i18n="menu.classiche"
+                >Le Classiche</span
+              >
               <span class="accordion-icon" aria-hidden="true"></span>
             </button>
             <div class="accordion-panel" id="panel-classiche">
               <div class="accordion-panel-inner">
-                <div class="menu-grid" role="list" aria-label="Classic pizzas">
+                <div
+                  class="menu-grid"
+                  role="list"
+                  aria-label="Classic pizzas"
+                  data-i18n-aria="aria.menu.classics"
+                >
                   <div
                     class="menu-item reveal"
                     role="listitem"
@@ -512,7 +606,11 @@
                       Capricciosa
                     </div>
                     <div class="menu-item-price">10,5</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.capricciosa.desc"
+                    >
                       tomato sauce, fior di latte, premium cooked ham,
                       artichokes, trifolate champignon mushrooms
                     </div>
@@ -525,7 +623,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">Diavola</div>
                     <div class="menu-item-price">9</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.diavola.desc"
+                    >
                       tomato sauce, fior di latte, spicy Sauris salami
                     </div>
                   </div>
@@ -539,7 +641,11 @@
                       Cotto e funghi
                     </div>
                     <div class="menu-item-price">9,5</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.cottofunghi.desc"
+                    >
                       tomato sauce, fior di latte, premium cooked ham, trifolate
                       champignon mushrooms
                     </div>
@@ -552,7 +658,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">Viennese</div>
                     <div class="menu-item-price">8,5</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.viennese.desc"
+                    >
                       tomato sauce, fior di latte, Alto Adige frankfurter
                     </div>
                   </div>
@@ -564,7 +674,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">4 formaggi</div>
                     <div class="menu-item-price">10,5</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.4formaggi.desc"
+                    >
                       fior di latte, gorgonzola, brie, Grana Padano DOP
                     </div>
                   </div>
@@ -578,7 +692,11 @@
                       Bresaola, rucola e grana
                     </div>
                     <div class="menu-item-price">12</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.bresaola.desc"
+                    >
                       Italian peeled tomatoes, 100% Italian milk mozzarella,
                       rocket, Valtellina IGP bresaola, Grana Padano riserva
                       shavings
@@ -594,7 +712,11 @@
                       Vegetariana
                     </div>
                     <div class="menu-item-price">10,5</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.vegetariana.desc"
+                    >
                       Italian peeled tomatoes, 100% Italian milk mozzarella,
                       courgettes, peppers, datterino cherry tomatoes
                     </div>
@@ -607,7 +729,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">Romana</div>
                     <div class="menu-item-price">10</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.romana.desc"
+                    >
                       Italian peeled tomatoes, 100% Italian milk mozzarella,
                       whole anchovy fillets, Calabrian oregano
                     </div>
@@ -620,7 +746,11 @@
                   >
                     <div class="menu-item-name" itemprop="name">Parmigiana</div>
                     <div class="menu-item-price">10,5</div>
-                    <div class="menu-item-desc" itemprop="description">
+                    <div
+                      class="menu-item-desc"
+                      itemprop="description"
+                      data-i18n="pizza.parmigiana.desc"
+                    >
                       Italian peeled tomatoes, 100% Italian milk mozzarella,
                       low-temperature oven-baked aubergines, grated Parmigiano
                       Reggiano, fresh basil
@@ -631,7 +761,7 @@
             </div>
           </div>
         </div>
-        <p class="menu-footer-note reveal">
+        <p class="menu-footer-note reveal" data-i18n="menu.footernote">
           AVAILABLE: lactose-free mozzarella and gluten-free bases.
         </p>
       </section>
@@ -641,8 +771,14 @@
         <div class="desserts-layout">
           <div>
             <div class="reveal">
-              <p class="section-eyebrow">A sweet ending</p>
-              <h2 class="section-title" id="desserts-heading">
+              <p class="section-eyebrow" data-i18n="desserts.eyebrow">
+                A sweet ending
+              </p>
+              <h2
+                class="section-title"
+                id="desserts-heading"
+                data-i18n-html="desserts.title"
+              >
                 Homemade<br /><em>desserts</em>
               </h2>
               <p
@@ -654,13 +790,18 @@
                   max-width: 480px;
                   margin-bottom: 48px;
                 "
+                data-i18n="desserts.desc"
               >
                 Every dessert at Smiché is made in-house, with the same care we
                 put into every pizza. We believe a meal deserves a proper ending
                 — something crafted, seasonal, and genuinely homemade.
               </p>
             </div>
-            <div role="list" aria-label="Homemade desserts">
+            <div
+              role="list"
+              aria-label="Homemade desserts"
+              data-i18n-aria="aria.desserts.list"
+            >
               <div
                 class="dessert-item reveal"
                 role="listitem"
@@ -671,7 +812,11 @@
                   <div class="dessert-name" itemprop="name">
                     Crema al mascarpone e biscottini di frolla alle mandorle
                   </div>
-                  <div class="dessert-desc" itemprop="description">
+                  <div
+                    class="dessert-desc"
+                    itemprop="description"
+                    data-i18n="dessert.mascarpone.desc"
+                  >
                     velvety mascarpone cream served with almond shortbread
                     biscuits
                   </div>
@@ -688,7 +833,11 @@
                   <div class="dessert-name" itemprop="name">
                     I 3 cioccolati di Martina
                   </div>
-                  <div class="dessert-desc" itemprop="description">
+                  <div
+                    class="dessert-desc"
+                    itemprop="description"
+                    data-i18n="dessert.3cioccolati.desc"
+                  >
                     white, milk and dark chocolate bavarian cream layered on a
                     cocoa crumble — a Smiché signature
                   </div>
@@ -705,7 +854,11 @@
                   <div class="dessert-name" itemprop="name">
                     Namelaka yogurt greco e cioccolato bianco
                   </div>
-                  <div class="dessert-desc" itemprop="description">
+                  <div
+                    class="dessert-desc"
+                    itemprop="description"
+                    data-i18n="dessert.namelaka.desc"
+                  >
                     silky Greek yoghurt and white chocolate namelaka with
                     seasonal fruit compote
                   </div>
@@ -722,7 +875,11 @@
                   <div class="dessert-name" itemprop="name">
                     Tiramisù in vasetto
                   </div>
-                  <div class="dessert-desc" itemprop="description">
+                  <div
+                    class="dessert-desc"
+                    itemprop="description"
+                    data-i18n="dessert.tiramisu.desc"
+                  >
                     classic tiramisù served in a jar — mascarpone, espresso,
                     Savoiardo biscuits, cocoa
                   </div>
@@ -739,7 +896,11 @@
                   <div class="dessert-name" itemprop="name">
                     Gelato fior di latte con caramello salato
                   </div>
-                  <div class="dessert-desc" itemprop="description">
+                  <div
+                    class="dessert-desc"
+                    itemprop="description"
+                    data-i18n="dessert.gelato.desc"
+                  >
                     pure Italian milk gelato with house-made salted caramel
                   </div>
                 </div>
@@ -755,7 +916,11 @@
                   <div class="dessert-name" itemprop="name">
                     Sorbetto al limone
                   </div>
-                  <div class="dessert-desc" itemprop="description">
+                  <div
+                    class="dessert-desc"
+                    itemprop="description"
+                    data-i18n="dessert.sorbetto.desc"
+                  >
                     refreshing lemon sorbet — with limoncello or liquorice on
                     request*
                   </div>
@@ -810,25 +975,27 @@
             </g>
           </svg>
         </div>
-        <p class="footer-tagline">
+        <p class="footer-tagline" data-i18n="footer.tagline">
           Crafted with local flour, certified ingredients, and 48 hours of
           patience.
         </p>
       </div>
       <div class="footer-col">
-        <h4>Visit us</h4>
+        <h4 data-i18n="footer.visit">Visit us</h4>
         <address style="font-style: normal">
           <p>Piazza San Biagio 1/D</p>
           <p>San Michele di Feletto, Treviso 31020</p>
-          <p style="margin-top: 12px">Tue – Sun</p>
+          <p style="margin-top: 12px" data-i18n="footer.days1">Tue – Sun</p>
           <p>18:45 – 23:00</p>
-          <p style="margin-top: 12px">Sat</p>
+          <p style="margin-top: 12px" data-i18n="footer.days2">Sat</p>
           <p>18:45 – 23:30</p>
-          <p style="margin-top: 12px">Closed on Monday</p>
+          <p style="margin-top: 12px" data-i18n="footer.closed">
+            Closed on Monday
+          </p>
         </address>
       </div>
       <div class="footer-col">
-        <h4>Reservations</h4>
+        <h4 data-i18n="footer.reservations">Reservations</h4>
         <a href="tel:+390547000000">+39 0438 936 499</a>
         <!-- todo: remove resevation feature -->
         <a href="mailto:sanmichele1985@gmail.com">sanmichele1985@gmail.com</a>
@@ -841,69 +1008,11 @@
         >
       </div>
     </footer>
-    <div class="footer-bottom">
+    <div class="footer-bottom" data-i18n="footer.copyright">
       © 2026 Pizzeria San Michele · All rights reserved · San Michele di
       Feletto, Treviso, Italy
     </div>
-
-    <script>
-      const nav = document.getElementById('nav');
-      window.addEventListener(
-        'scroll',
-        () => {
-          nav.classList.toggle('scrolled', window.scrollY > 20);
-        },
-        { passive: true },
-      );
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry, i) => {
-            if (entry.isIntersecting) {
-              setTimeout(() => entry.target.classList.add('visible'), i * 55);
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.1 },
-      );
-      document
-        .querySelectorAll('.reveal')
-        .forEach((el) => observer.observe(el));
-
-      // Accordion
-      document
-        .querySelectorAll('.accordion-item.open .accordion-panel')
-        .forEach((p) => {
-          p.style.height = 'auto';
-        });
-      document.querySelectorAll('.accordion-trigger').forEach((trigger) => {
-        trigger.addEventListener('click', () => {
-          const item = trigger.closest('.accordion-item');
-          const panel = item.querySelector('.accordion-panel');
-          const opening = !item.classList.contains('open');
-          if (opening) {
-            item.classList.add('open');
-            trigger.setAttribute('aria-expanded', 'true');
-            panel.style.height = panel.scrollHeight + 'px';
-            panel.addEventListener(
-              'transitionend',
-              () => {
-                panel.style.height = 'auto';
-              },
-              { once: true },
-            );
-            panel
-              .querySelectorAll('.reveal:not(.visible)')
-              .forEach((el) => observer.observe(el));
-          } else {
-            panel.style.height = panel.scrollHeight + 'px';
-            panel.offsetHeight;
-            panel.style.height = '0';
-            item.classList.remove('open');
-            trigger.setAttribute('aria-expanded', 'false');
-          }
-        });
-      });
-    </script>
+    <script src="./translations.js"></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>

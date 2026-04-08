@@ -29,6 +29,11 @@
   .nav-links { display: flex; gap: 36px; list-style: none; }
   .nav-links a { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; color: var(--forest); text-decoration: none; transition: color 0.2s; }
   .nav-links a:hover { color: var(--terracotta); }
+  .lang-switcher { display: flex; align-items: center; gap: 2px; margin-left: 32px; }
+  .lang-btn { background: none; border: none; cursor: pointer; font-family: var(--font-body); font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-light); padding: 4px 7px; transition: color 0.2s; border-radius: 2px; }
+  .lang-btn:hover { color: var(--forest); }
+  .lang-btn.active { color: var(--terracotta); }
+  .lang-btn + .lang-btn::before { content: '·'; color: var(--cream-dark); margin-right: 2px; font-size: 0.6rem; pointer-events: none; }
 
   /* HERO */
   .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 66px; }
@@ -147,6 +152,7 @@
   @media (max-width: 960px) {
     nav { padding: 12px 24px; }
     .nav-links { display: none; }
+    .lang-switcher { margin-left: auto; }
     .hero { grid-template-columns: 1fr; }
     .hero-text { padding: 56px 28px 48px; }
     .hero-image { height: 60vw; }
