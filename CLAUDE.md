@@ -27,10 +27,4 @@ All images live in `images/`. The `favicon.svg` is used in the nav logo. The wor
 
 ## Pending work (todos.txt)
 
-- Opening hours and address need more visual prominence
-- Indoor photos still needed; note that the terrace is summer-only
-- Search `@todo` in code for inline markers
-- Various SEO/structured-data text still placeholder
-- Responsiveness and SEO audit pending
-- Possible video/reels section (Instagram source)
-- Possible reviews section
+Next steps are written in todos.txt, the file is ever-changing and it will be updated with new todos and we'll remove the ones that were completed.
