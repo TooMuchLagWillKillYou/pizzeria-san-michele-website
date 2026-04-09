@@ -24,7 +24,9 @@ function applyLanguage(lang) {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
 
-  try { localStorage.setItem('lang', lang); } catch (_) {}
+  try {
+    localStorage.setItem('lang', lang);
+  } catch (_) {}
 }
 
 document.querySelectorAll('.lang-btn').forEach((btn) => {
@@ -32,11 +34,19 @@ document.querySelectorAll('.lang-btn').forEach((btn) => {
 });
 
 const _savedLang = (() => {
-  try { return localStorage.getItem('lang'); } catch (_) { return null; }
+  try {
+    return localStorage.getItem('lang');
+  } catch (_) {
+    return null;
+  }
 })();
-const _defaultLang = _savedLang ||
-  (navigator.language.startsWith('de') ? 'de' :
-   navigator.language.startsWith('en') ? 'en' : 'it');
+const _defaultLang =
+  _savedLang ||
+  (navigator.language.startsWith('de')
+    ? 'de'
+    : navigator.language.startsWith('en')
+      ? 'en'
+      : 'it');
 applyLanguage(_defaultLang);
 // ──────────────────────────────────────────────────────────────────────────────
 
@@ -61,7 +71,7 @@ const observer = new IntersectionObserver(
 );
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-// Accordion
+// ── Accordion ─────────────────────────────────────────────────────────────────
 document
   .querySelectorAll('.accordion-item.open .accordion-panel')
   .forEach((p) => {
@@ -95,3 +105,4 @@ document.querySelectorAll('.accordion-trigger').forEach((trigger) => {
     }
   });
 });
+// ──────────────────────────────────────────────────────────────────────────────
