@@ -2,7 +2,6 @@
   todo
 +----------+
 - gli orari e l'indirizzo devono essere più evidenti, inserire anche la mappa come nell'esempio che mi ha inviato Alessia
-- le traduzioni devono essere le stesse dei menù cartacei
 - caricare anche le foto dell'interno e specificare che la terrazza è aperta solo d'estate
 - search for @todo keyword in the code
 - sostituire questo testo e tutto quello che non c'entra: "Artisanal pizzeria in Cesena with 48-hour leavened pizza, unrefined local flours, DOP-certified ingredients, homemade desserts, and a terrace."
@@ -22,3 +21,4 @@
 - traduzione in italiano, tedesco e inglese
 - indirizzo e contatti
 - specificare il giorno di chiusura
+- le traduzioni devono essere le stesse dei menù cartacei

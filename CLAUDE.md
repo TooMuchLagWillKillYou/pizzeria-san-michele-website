@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project overview
 
-Static website for Pizzeria San Michele (brand name: Smiché), located in San Michele di Feletto, Treviso, Italy. No build step, no package manager — open `index.html` directly in a browser or use any static file server (e.g. `npx serve .`).
+Static website for Pizzeria San Michele, located in San Michele di Feletto, Treviso, Italy. No build step, no package manager — open `index.html` directly in a browser or use any static file server (e.g. `npx serve .`).
 
 ## Architecture
 
@@ -23,12 +23,11 @@ When adding or changing copy, update **all three languages** (`it`, `en`, `de`) 
 
 ## Images
 
-All images live in `images/`. The `favicon.svg` is used in the nav logo. The wordmark SVG (the full Smiché logotype) is inlined in `index.html` inside `.hero-brand`.
+All images live in `images/`. The `favicon.svg` is used in the nav logo. The wordmark SVG (the full Pizzeria San Michele logotype) is inlined in `index.html` inside `.hero-brand`.
 
 ## Pending work (todos.txt)
 
 - Opening hours and address need more visual prominence
-- Translations should match the physical printed menus
 - Indoor photos still needed; note that the terrace is summer-only
 - Search `@todo` in code for inline markers
 - Various SEO/structured-data text still placeholder
